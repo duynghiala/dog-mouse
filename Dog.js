@@ -1,5 +1,3 @@
-var chalk = require ('chalk');
-
 function Dog(name){
 	this.name = name;
 	this.stomach = [];	
@@ -10,7 +8,7 @@ Dog.prototype.eat = function(cat) {
 };
 
 Dog.prototype.sayHi = function() {
-	console.log('Hi! My name is' + chalk.red(this.name));
+	console.log('Hi! My name is', this.name);
 };
 
 module.exports = Dog;
